@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,900&display=swap');
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="page-layout">
+            <header class="header">
+                <h1 class="app-title">MyMovieDB</h1>
+                <div class="header-items-container">
+                    <span class="header-items">Total Movies in Library: <span id="total-movies-library-number">0</span></span>
+                    <span class="header-items">Total Movies Watched: <span id="total-movies-watched-number">0</span></span>
+                    <span class="header-items">Total Minutes Watched: <span id="total-minutes-watched">0</span> min</span>
+                </div>
+            </header>
+            <div class="movie-showcase" id="showcase">
+                <div class="movie-item" id="add-new-movie"><b>+</b></div>
+            </div>
+        </div>
+        <div class="modal" id="modal-container">
+            <div class="modal-content">
+                <label for="title" class="modal-accessibility">Title*</label>
+                <input type="text" placeholder="e.g. The Lord Of The Rings: The Fellowship of the Ring" id="title">
+            
+                <label for="director" class="modal-accessibility">Director*</label>
+                <input type="text" placeholder="e.g. Peter Jackson" id="director">
+
+                <label for="duration" class="modal-accessibility">Duration in minutes*</label>
+                <input type="text" placeholder="e.g. 178" id="duration">
+                
+                <div class="modal-accessibility" id="checkbox-container">Movie Watched: <span id="movie-seen-container"><input type="checkbox" id="movie-seen-check"></span></div>
+
+                <div class="modal-button-container">
+                    <button type="button" class="btn-modal" id="submit-movie-btn">Submit</button>
+                    <button type="button" class="btn-modal" id="cancel-form-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+
+</html>
